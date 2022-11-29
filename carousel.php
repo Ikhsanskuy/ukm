@@ -119,7 +119,7 @@ $detail = $ambil->fetch_assoc();
         <!-- FOOTER -->
         <footer>
             <div class="footer-content">
-                <h3>Hubungi UKM kami disini</h3>
+                <h3>Hubungi UKM kami tes</h3>
                 <ul class="socials">
                     <li><a href="<?= $pecah['ig']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="<?= $pecah['twt']; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></a></li>
