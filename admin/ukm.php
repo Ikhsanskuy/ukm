@@ -18,9 +18,11 @@
             <tr>
                 <td><?php echo $nomor; ?></td>
                 <td><?php echo $pecah['nama']; ?></td>
-                <td><?php echo $pecah['deskripsi']; ?></td>
+                <td><?php echo $pecah['deskukm']; ?></td>
                 <td>
-                    <img src="../image/ukm/<?php echo $pecah['foto']; ?>" width="50" onclick="window.open('../image/ukm/<?= $pecah['foto']; ?>', '_blank');">
+                    <img src="../image/ukm/<?php echo $pecah['foto']; ?>" width="50" height="50" onclick="window.open('../image/ukm/<?= $pecah['foto']; ?>', '_blank');">
+                    <img src="../image/ukm/<?php echo $pecah['foto1']; ?>" width="50" height="50" onclick="window.open('../image/ukm/<?= $pecah['foto']; ?>', '_blank');">
+                    <img src="../image/ukm/<?php echo $pecah['foto2']; ?>" width="50" height="50" onclick="window.open('../image/ukm/<?= $pecah['foto']; ?>', '_blank');">
                 </td>
                 <td>
                     <a href="<?= $pecah['ig']; ?>" target="_blank"><i class="fa fa-instagram fa-2x"></i></a> |

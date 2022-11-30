@@ -35,15 +35,18 @@ include 'koneksi.php'; ?>
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ukm">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="ukm">Post</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link" href="ukm">UKM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ukm">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -104,14 +107,10 @@ include 'koneksi.php'; ?>
                     <div class="col-lg-4 col-md-6 text-center">
                         <div class="single-recent-blog-post">
                             <div class="thumb">
-                                <img class="img-fluid" src="image/blog/blog-1.jpg" alt="post">
+                                <img class="img-fluid" src="image/news/<?= $news['foto'] ?>" alt="post" style="border-radius:10%">
                             </div>
                             <div class="details text-white">
-                                <div class="tags">
-                                    <a href="#" class="button_hover tag_btn text-white">Travel</a>
-                                    <a href="#" class="button_hover tag_btn text-white">Life Style</a>
-                                </div>
-                                <a href="#">
+                                <a href="news/index.php?id=<?= $news['id'] ?>">
                                     <h4 class="sec_h4 text-white"><?php echo $news['nama']; ?></h4>
                                 </a>
                                 <p><?php echo $news['deskripsi']; ?></p>

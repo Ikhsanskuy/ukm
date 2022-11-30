@@ -10,7 +10,7 @@ include '../koneksi.php';
 include "../include/header.php";
 $id = mysqli_real_escape_string($conn, $_GET['id']);
 // $ambil = $conn->query("SELECT * FROM ukm WHERE id='$_GET[id]'");
-$ambil = $conn->query("SELECT * FROM ukm WHERE `id`=$id ");
+$ambil = $conn->query("SELECT * FROM news WHERE `id`=$id ");
 $detail = $ambil->fetch_assoc();
 ?>
 <!doctype html>
@@ -66,49 +66,6 @@ $detail = $ambil->fetch_assoc();
     </header>
 
     <main role="main">
-        <section>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto1'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi1']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto2'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi2']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
 
         <!-- Marketing messaging and featurettes
       ================================================== -->
@@ -119,22 +76,19 @@ $detail = $ambil->fetch_assoc();
 
             <!-- START THE FEATURETTES -->
 
+
+
             <hr class="featurette-divider">
-
-
-            <div>
-                <h2 class="featurette-heading text-center mb-3">
-                    <p><?php echo $detail['nama']; ?></p>
-                </h2>
-                <p class="lead"><?php echo $detail['deskukm']; ?></p>
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading mb-5"><?= $detail['nama'] ?></h2>
+                    <p class="lead"><?= $detail['deskripsi'] ?></p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="../image/news/<?= $detail['foto'] ?>" alt="Generic placeholder image">
+                </div>
             </div>
-            <!-- <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="./image/ug.png" alt="Generic placeholder image">
-                </div> -->
-
-
             <hr class="featurette-divider">
-
             <!-- /END THE FEATURETTES -->
 
         </div><!-- /.container -->

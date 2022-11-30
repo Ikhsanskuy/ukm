@@ -8,10 +8,11 @@ include '../koneksi.php';
 
 // include "include/head.php";
 include "../include/header.php";
-$id = mysqli_real_escape_string($conn, $_GET['id']);
+
 // $ambil = $conn->query("SELECT * FROM ukm WHERE id='$_GET[id]'");
-$ambil = $conn->query("SELECT * FROM ukm WHERE `id`=$id ");
-$detail = $ambil->fetch_assoc();
+// $ambil = $conn->query("SELECT * FROM ukm");
+// $detail = $ambil->fetch_assoc();
+$ambil = $conn->query("SELECT * FROM ukm");
 ?>
 <!doctype html>
 <html lang="en">
@@ -32,6 +33,21 @@ $detail = $ambil->fetch_assoc();
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../admin/assets/css/stylefooter.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../vendors/linericon/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../js/bootstrap.min.css" rel="stylesheet">
+</head>
 </head>
 
 <header class="header_area">
@@ -66,7 +82,7 @@ $detail = $ambil->fetch_assoc();
     </header>
 
     <main role="main">
-        <section>
+        <!-- <section>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -108,7 +124,7 @@ $detail = $ambil->fetch_assoc();
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </section>
+        </section> -->
 
         <!-- Marketing messaging and featurettes
       ================================================== -->
@@ -116,22 +132,34 @@ $detail = $ambil->fetch_assoc();
 
         <div class="container marketing">
 
+            <section class="accomodation_area section_gap">
+                <div class="container">
+                    <div class="section_title text-center">
+                        <h2 class="title_color">UKM</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
 
-            <!-- START THE FEATURETTES -->
+                    <div class="row mb_30">
+                        <?php
+                        $count = 0;
+                        foreach ($ambil as $items) {
+                            $count++;
+                        ?>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="accomodation_item text-center">
+                                    <div class="hotel_img">
+                                        <img src="../image/ukm/<?= $items['foto']; ?>" width="250" height="250" style="border-radius:10%">
+                                        <!-- <a href="detail_trip.php?trip_id=<?= $items['kode_trip'] ?>" class="btn theme_btn button_hover">Detail</a> -->
+                                    </div>
+                                    <h4 class="sec_h4"><?= $items['nama'] ?></h4>
+                                    <a href="ukm.php?id=<?= $items['id'] ?>">Detail</a>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
 
-            <hr class="featurette-divider">
-
-
-            <div>
-                <h2 class="featurette-heading text-center mb-3">
-                    <p><?php echo $detail['nama']; ?></p>
-                </h2>
-                <p class="lead"><?php echo $detail['deskukm']; ?></p>
-            </div>
-            <!-- <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" src="./image/ug.png" alt="Generic placeholder image">
-                </div> -->
-
+                </div>
+            </section>
 
             <hr class="featurette-divider">
 

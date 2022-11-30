@@ -73,10 +73,10 @@ if (isset($_POST['ubah'])) {
 
 
     if ($query) {
-        echo "<script>alert('Produk Diubah'); </script>";
+        echo "<script>alert('Data Diubah'); </script>";
         echo "<script>location='dashboard.php?halaman=news'; </script>";
     } else {
-        echo "<script>alert('Produk Gagal Diubah'); </script>";
+        echo "<script>alert('Data Gagal Diubah'); </script>";
         echo "<script>location='dashboard.php?halaman=news'; </script>";
         // header("location:./index.php");
     }
