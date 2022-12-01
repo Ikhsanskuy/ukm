@@ -83,7 +83,7 @@ include 'koneksi.php'; ?>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="image/about_bg.jpg" alt="img">
+                    <img class="img-fluid" src="image/ug.png" alt="img" width="450" height="450">
                 </div>
             </div>
         </div>

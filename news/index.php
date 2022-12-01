@@ -81,11 +81,11 @@ $detail = $ambil->fetch_assoc();
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading mb-5"><?= $detail['nama'] ?></h2>
+                    <h2 class="featurette-heading mt-5"><?= $detail['nama'] ?></h2>
                     <p class="lead"><?= $detail['deskripsi'] ?></p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="../image/news/<?= $detail['foto'] ?>" alt="Generic placeholder image">
+                    <img class="featurette-image img-fluid mt-5 mb-5 " src="../image/news/<?= $detail['foto'] ?>" alt="Generic placeholder image" width="500" height="500">
                 </div>
             </div>
             <hr class="featurette-divider">
