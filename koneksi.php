@@ -1,7 +1,15 @@
 <?php
+// <--mac-->
+// $host = 'localhost';
+// $user = 'root';
+// $pass = 'root';
+// $db = 'penulisan_ilmiah';
+// $conn = mysqli_connect($host, $user, $pass, $db);
+
+// <--windows-->
 $host = 'localhost';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 $db = 'penulisan_ilmiah';
 $conn = mysqli_connect($host, $user, $pass, $db);
 
