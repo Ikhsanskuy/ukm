@@ -64,13 +64,13 @@ $ambil = $conn->query("SELECT * FROM ukm");
                             <a class="nav-link" href="../index.php#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../">Post</a>
+                            <a class="nav-link" href="../index.php#news">Post</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../">UKM</a>
+                            <a class="nav-link" href="index.php">UKM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ukm">Contact</a>
+                            <a class="nav-link" href="../index.php#contact">Contact</a>
                         </li>
                     </ul>
             </div>
