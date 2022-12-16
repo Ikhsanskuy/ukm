@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2022 at 04:53 PM
+-- Generation Time: Dec 16, 2022 at 12:22 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -20,6 +20,48 @@ SET time_zone = "+00:00";
 --
 -- Database: `penulisan_ilmiah`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`username`, `password`) VALUES
+('admin', '*4ACFE3202A5FF5CF467898FC58AAB1D615029441');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE `news` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `deskripsi` varchar(255) NOT NULL,
+  `foto` varchar(255) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `nama`, `deskripsi`, `foto`, `timestamp`) VALUES
+(1, 'nama', '  erqhifjqer', 'room1.jpg', '2022-11-30 16:41:43'),
+(2, 'ug tv', ' anjayiuerguerhijgrow', 'room1.jpg', '2022-11-30 16:41:52'),
+(3, 'eroigj', ' eirngiongioqngiongr', 'room1.jpg', '2022-11-30 16:42:46'),
+(5, 'tesik', 'ii  tes', 'room1.jpg', '2022-11-28 18:25:38');
 
 -- --------------------------------------------------------
 
@@ -60,6 +102,18 @@ INSERT INTO `ukm` (`id`, `nama`, `deskukm`, `deskripsi`, `foto`, `deskripsi1`, `
 --
 
 --
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `ukm`
 --
 ALTER TABLE `ukm`
@@ -68,6 +122,12 @@ ALTER TABLE `ukm`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ukm`
