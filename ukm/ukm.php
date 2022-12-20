@@ -23,7 +23,7 @@ $detail = $ambil->fetch_assoc();
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Halaman detail UKM</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../js/bootstrap.min.css" rel="stylesheet">
@@ -127,7 +127,7 @@ include "header.php";
                     <li><a href="<?= $pecah['ig']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="<?= $pecah['twt']; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></a></li>
                 </ul>
-                <p>Copyright &copy; 2022 codeOpacity. designed by <span>Angkringan Ceria</span></p>
+                <p>Copyright &copy; 2022. designed by <span>UKM Gunadarama</span></p>
             </div>
         </footer>
 
