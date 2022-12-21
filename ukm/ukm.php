@@ -22,7 +22,7 @@ $detail = $ambil->fetch_assoc();
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-
+    <link rel="icon" href="../image/ug.png" type="image/png">
     <title>Halaman detail UKM</title>
 
     <!-- Bootstrap core CSS -->
