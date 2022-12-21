@@ -7,7 +7,7 @@ include '../koneksi.php';
 
 
 // include "include/head.php";
-include "../include/header.php";
+// include "../include/header.php";
 
 // $ambil = $conn->query("SELECT * FROM ukm WHERE id='$_GET[id]'");
 // $ambil = $conn->query("SELECT * FROM ukm");
@@ -28,7 +28,7 @@ $ambil = $conn->query("SELECT * FROM ukm");
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="image/ug.png" type="image/png">
+    <link rel="icon" href="../image/ug.png" type="image/png">
     <title>UKM Gunadarma</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
