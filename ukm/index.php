@@ -25,15 +25,11 @@ $ambil = $conn->query("SELECT * FROM ukm");
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
     <title>Halaman UKM</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../js/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../css/carousel.css" rel="stylesheet">
-    <link href="../admin/assets/css/stylefooter.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/ug.png" type="image/png">
+    <title>UKM Gunadarma</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../vendors/linericon/style.css">
@@ -47,6 +43,9 @@ $ambil = $conn->query("SELECT * FROM ukm");
     <link rel="stylesheet" href="../css/responsive.css">
     <link href="../css/carousel.css" rel="stylesheet">
     <link href="../js/bootstrap.min.css" rel="stylesheet">
+
+        <link href="../js/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 </head>
 
@@ -85,53 +84,6 @@ $ambil = $conn->query("SELECT * FROM ukm");
     </header>
 
     <main role="main">
-        <!-- <section>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto1'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi1']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="first-slide" src="../image/ukm/<?= $detail['foto2'] ?>" alt="First slide">
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <p><?php echo $detail['deskripsi2']; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section> -->
-
-        <!-- Marketing messaging and featurettes
-      ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
 
         <div class="container marketing">
 
@@ -223,14 +175,14 @@ $ambil = $conn->query("SELECT * FROM ukm");
                     <div class="single-footer-widget instafeed">
                         <h6 class="footer_title">InstaFeed</h6>
                         <ul class="list_style instafeed d-flex flex-wrap">
-                            <li><img src="image/instagram/Image-01.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-02.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-03.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-04.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-05.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-06.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-07.jpg" alt=""></li>
-                            <li><img src="image/instagram/Image-08.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-01.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-02.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-03.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-04.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-05.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-06.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-07.jpg" alt=""></li>
+                            <li><img src="../image/instagram/Image-08.jpg" alt=""></li>
                         </ul>
                     </div>
                 </div>
