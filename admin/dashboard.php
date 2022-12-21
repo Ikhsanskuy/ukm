@@ -19,6 +19,7 @@ if (!isset($_SESSION['username'])) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
+    <link rel="icon" href="../image/ug.png" type="image/png">
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->

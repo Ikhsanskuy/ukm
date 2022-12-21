@@ -28,7 +28,8 @@ $ambil = $conn->query("SELECT * FROM ukm");
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="../image/ug.png" type="image/png">
+    <link rel="icon" type="image/png" href="../image/ug.png">
+    <!-- <link rel="icon" type="image/x-icon" href="../image/ug.ico"> -->
     <title>UKM Gunadarma</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">

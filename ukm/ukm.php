@@ -7,7 +7,7 @@ include '../koneksi.php';
 
 
 // include "include/head.php";
-include "../include/header.php";
+// include "../include/header.php";
 $id = mysqli_real_escape_string($conn, $_GET['id']);
 // $ambil = $conn->query("SELECT * FROM ukm WHERE id='$_GET[id]'");
 $ambil = $conn->query("SELECT * FROM ukm WHERE `id`=$id ");
@@ -21,8 +21,9 @@ $detail = $ambil->fetch_assoc();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
-    <link rel="icon" href="../image/ug.png" type="image/png">
+    <!-- <link rel="icon" type="image/icon" href="../image/ug.ico"/> -->
+    <link rel="shortcut icon" type="image/png" href="../image/ug.png">
+    <!-- <link rel="icon" type="image/x-icon" href="../image/ug.ico"> -->
     <title>Halaman detail UKM</title>
 
     <!-- Bootstrap core CSS -->
