@@ -21,9 +21,7 @@ $detail = $ambil->fetch_assoc();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="icon" type="image/icon" href="../image/ug.ico"/> -->
     <link rel="shortcut icon" type="image/png" href="../image/ug.png">
-    <!-- <link rel="icon" type="image/x-icon" href="../image/ug.ico"> -->
     <title>Halaman detail UKM</title>
 
     <!-- Bootstrap core CSS -->
