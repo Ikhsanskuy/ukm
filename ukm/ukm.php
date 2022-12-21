@@ -124,8 +124,8 @@ include "header.php";
             <div class="footer-content">
                 <h3>Hubungi UKM kami disini</h3>
                 <ul class="socials">
-                    <li><a href="<?= $pecah['ig']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="<?= $pecah['twt']; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></a></li>
+                    <li><a href="<?= $detail['ig']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="<?= $detail['twt']; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></a></li>
                 </ul>
                 <p>Copyright &copy; 2022. designed by <span>UKM Gunadarama</span></p>
             </div>
